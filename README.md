@@ -12,6 +12,8 @@ Some notes:
 
 - The app obviously is not ready for production from a style standpoint.
 
+- I would love to share my ideas about how we could improve this!
+
 You can use the following scripts:
 
 ## `yarn start`
