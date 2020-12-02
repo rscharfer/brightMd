@@ -49,3 +49,17 @@
   display: inline-block;
   margin: 1rem;
 }
+
+.brandRow {
+  display: flex;
+  line-height: 1.25rem;
+  margin-bottom: .5rem;
+}
+
+.inputLabelView {
+  width: 200px;
+}
+
+.inputValueEditView{
+  width : 500px
+}
