@@ -9,6 +9,7 @@ export function NavBar({
   return (
     <div className="headerWrapper">
       <header>
+        <h1>{title}</h1>
         <p>{subtitle}</p>
       </header>
       <div>

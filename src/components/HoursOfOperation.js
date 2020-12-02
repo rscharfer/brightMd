@@ -102,7 +102,6 @@ function HoursOfOperation() {
   const editHandler = () => setMode("edit");
   return (
     <div className="wrapper">
-      <h1>{mode}</h1>
       <NavBar
         mode={mode}
         title="Hours of operation"
