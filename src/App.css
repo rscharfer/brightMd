@@ -17,6 +17,7 @@
   border: none;
   padding: 0.5rem 1rem;
   cursor: pointer;
+  outline: none;
 }
 .saveButton {
   color: white;

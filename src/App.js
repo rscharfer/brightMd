@@ -141,7 +141,7 @@ function Day({ dayOfWeek, mode }) {
   );
 }
 
-function App() {
+function HoursOfOperation() {
   const [mode, setMode] = React.useState("view");
   const dispatch = useHoursOfDispatch();
 
@@ -266,7 +266,7 @@ function WrappedApp(props) {
   return (
     <>
       <HoursOfOperationProvider>
-        <App />
+        <HoursOfOperation />
       </HoursOfOperationProvider>
       <hr/>
       <Branding />
