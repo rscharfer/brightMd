@@ -1,13 +1,23 @@
 import * as React from "react";
 import { NavBar } from "./NavBar";
 
-function ControlledInput({ labelText, htmlFor, ...props }) {
+function ControlledInput({
+  labelText,
+  htmlFor,
+  placeholder = "placeholder text",
+  ...props
+}) {
   return (
     <div className="brandRow">
       <label htmlFor={htmlFor} className="inputLabelView">
         {labelText}
       </label>
-      <input id={htmlFor} className="inputValueEditView" {...props} />
+      <input
+        placeholder={placeholder}
+        id={htmlFor}
+        className="inputValueEditView"
+        {...props}
+      />
     </div>
   );
 }
@@ -49,6 +59,12 @@ export function Branding(props) {
         cancelHandler={cancelHandler}
         editHandler={editHandler}
       />
+      <h2 className="display">Display Name</h2>
+      <p>
+        Set how the organization is diplayed to patients. In instances with
+        limited screen space (emails, mobile view), a shortened name is
+        displayed
+      </p>
       {mode === "view" ? (
         <>
           <div className="brandRow">
